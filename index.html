@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>To-Do List</h1>
+    </header>
+    <main>
+      <form id="task-form">
+        <input type="text" id="task-title" placeholder="Task Title" required>
+        <textarea id="task-desc" placeholder="Task Description" required></textarea>
+        <label>
+          Created Date:
+          <input type="date" id="created-date" required>
+        </label>
+        <label>
+          Due Date:
+          <input type="date" id="due-date" required>
+        </label>
+        <select id="task-status">
+          <option value="Pending">Pending</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+        </select>
+        <button type="submit" class="add-task">Add Task</button>
+      </form>
+      <ul id="task-list"></ul>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
